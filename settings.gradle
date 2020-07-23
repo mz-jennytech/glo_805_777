@@ -1,0 +1,8 @@
+rootProject.name = 'app3d-accountquery'
+include 'app3d-accountquery',
+        'fcmb-account-details',
+        'skye-account-details',
+        'jaiz-account-details',
+        'heritage-account-details',
+        'tcf-account-details',
+        'unity-account-details'

@@ -1,0 +1,20 @@
+apply from: file('gradle/etz/clean.gradle')
+
+subprojects { subproject ->
+
+    apply plugin: 'java'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    group = "com.etz.app3d"
+
+
+    dependencies {
+        implementation 'com.google.code.gson:gson:2.8.2'
+        implementation 'org.projectlombok:lombok:1.16.2'
+        implementation 'org.json:json:20180813'
+    }
+
+    apply from: file("$rootProject.projectDir/gradle/etz/stage.gradle")
+}
